@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="navigation">
+            <div class="nav_item nav__logo">
+                <h3>BLUE CLOUD</h3>
+            </div>
+            <div class="nav__menu">
+                <ul class="menu__items">
+                    <li class="nav__menu--item">
+                        <a class="items-link">Nike</a>
+                    </li>
+                    <li class="nav__menu--item">
+                        <a class="items-link">Adidias</a>
+                    </li>
+                    <li class="nav__menu--item">
+                        <a class="items-link">Converse</a>
+                    </li>
+                    <li class="nav__menu--item">
+                        <a class="items-link">Bitis Hunter</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav__account">
+                <ul class="items">
+                    <li class="nav__menu--item"><i class="fas fa-search"></i></li>
+                    <li class="nav__menu--item"><i class="fas fa-user-circle"></i></li>
+                    <li class="nav__menu--item"></li><i class="fas fa-shopping-bag"></i></li>
+                </ul>
+            </div>
+
+        </div>
+    </header>
+    <section class="section-carousel">
+        <div class="slider">
+            <div class="carousel">
+                <div class="carousel__item carousel__item--visible">
+                    <img src="./img/air3.jpg">
+                </div>
+                <div class="carousel__item">
+                    <img src="./img/barrett-ward.jpg">
+                </div>
+                <div class="carousel__item">
+                    <img src="./img/luis-felipe.jpg">
+                </div>
+                <div class="carousel__actions">
+                    <button id="carousel__button--prev" aria-label="Previous slide" onclick="plusDivs(-1)">
+                        <i class="fa fa-angle-left slider-prev" 
+                         ></i></button>
+                    <button id="carousel__button--next" aria-label="Next slide" onclick="plusDivs(1)">
+                        <i class="fa fa-angle-right slider-next" >
+                        </i></button>
+                </div>
+            </div>
+
+            <ul class="slider__dots-menu">
+                <li class="slider-dot-item slider__dot--active" onclick="currentDiv(1)"></li>
+                <li class="slider-dot-item " onclick="currentDiv(2)"></li>
+                <li class="slider-dot-item " onclick="currentDiv(3)"></li>
+            </ul>
+
+        </div>
+    </section>
+
+    <section class="section-bestseller">
+        <h3 class="section-bestseller--title">SẢN PHẨM BÁN CHẠY THÁNG NÀY</h3>
+        <div class="product">
+            <div class="product-item">
+                <img src="" alt="photo1">
+            </div>
+
+        </div>
+
+    </section>
+    <script type="text/javascript" src="./app.js"></script>
+</body>
+
+</html>

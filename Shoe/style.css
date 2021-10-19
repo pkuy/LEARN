@@ -1,0 +1,208 @@
+/* CÀI ĐẶT BAN ĐẦU */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 10px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    max-width: 1400px;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+input,
+textarea,
+select,
+button {
+    outline: none;
+}
+
+input {
+    line-height: normal;
+}
+
+label,
+button {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    line-height: 1;
+}
+
+
+/* Code phần header */
+
+.navigation {
+    background-color: white;
+    position: sticky;
+    font-size: 1.8rem;
+    width: 100%;
+    height: 15vh;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    text-align: center;
+    align-items: center;
+}
+
+.nav__menu {
+    display: inline-block;
+    margin: 1 1.5rem;
+}
+
+.items-link {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: black;
+    text-transform: capitalize;
+}
+
+.nav__menu--item {
+    display: inline-block;
+    margin: 0 1rem;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.items-link:hover {
+    color: #f4a261;
+}
+
+.fas {
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+
+/* Code section-carousel */
+
+.slider {
+    position: relative;
+    height: 75vh;
+}
+
+.carousel {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 75vh;
+}
+
+.carousel .carousel__item,
+.carousel .carousel__item--hidden {
+    display: none;
+}
+
+.carousel .carousel__item {
+    width: 100%;
+}
+
+.carousel .carousel__item img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transform: translateY(-25%);
+}
+
+.carousel .carousel__item--visible {
+    display: block;
+    animation: fadeVisibility 1.65s;
+}
+
+.carousel .carousel__actions {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carousel .carousel__actions button {
+    border-radius: 0.5rem;
+    border: 0;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    font-size: 2.4rem;
+    font-weight: 100;
+    opacity: 0.2;
+    background-color: #999;
+    margin: 0 1rem;
+    opacity: 0.6;
+}
+
+.carousel .carousel__actions button:hover {
+    opacity: 0.8;
+}
+
+.carousel .carousel__actions button #carousel__button--prev {
+    margin-left: 20px;
+}
+
+.carousel .carousel__actions button #carousel__button--next {
+    margin-right: 20px;
+}
+
+@keyframes fadeVisibility {
+    0% {
+        opacity: 0.4;
+    }
+    100% {
+        opacity: 1;
+        transition: background-color 0.6s ease;
+    }
+}
+
+.slider__dots-menu {
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    z-index: 10;
+}
+
+.slider__dots-menu li {
+    margin: 0 1rem;
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 10rem;
+    background-color: #999;
+    cursor: pointer;
+    transition: background-color 0.6s ease;
+}
+
+.slider__dots-menu .slider__dot--active {
+    background-color: white;
+}
+
+.section-bestseller--title {
+    text-align: center;
+    margin: 3rem 0 3rem;
+    font-size: 2.5rem;
+    padding: 2rem;
+    font-weight: 500;
+}
