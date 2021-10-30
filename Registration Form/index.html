@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header--title">
+            <h2>Đăng nhập - Đăng kí </h2>
+        </div>
+
+
+        <form id="form" class="form">
+            <div class="form-control">
+                <label for="fullName">Họ và tên</label>
+                <input type="text" placeholder="Nguyễn Trần Vinh" id="fullName" />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <!-- <div class="form-control">
+                <label for="firstName">Tên</label>
+                <input type="text" placeholder="Vinh">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div> -->
+            <div class="form-control">
+                <label for="userName">Tên đăng nhập</label>
+                <input type="text" placeholder="Star_Platinum" id="userName">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+
+            <div class="form-control">
+                <label for="email">Email</label>
+                <input type="email" placeholder="nguyentranvinh@gmail.com" id="email">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+
+            <div class="form-control">
+                <label for="phoneNumber">Số điện thoại</label>
+                <input type="tel" placeholder="0337430984" id="phoneNumber">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+
+            <div class="form-control">
+                <label for="birthDate">Ngày sinh</label>
+                <input type="text" placeholder="dd-mm-yyyy" id="birthDate">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+
+            <button>Đăng Kí</button>
+        </form>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
