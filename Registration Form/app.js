@@ -213,17 +213,3 @@ function setSuccessFor(input) {
     const formControl = input.parentElement;
     formControl.className = 'form-control success';
 }
-
-// var result = checkCapitalizeTheFirstLetterOfEachWord("Nguyen Tran Vinh");
-// console.log(result);
-
-// var user1 = 'Ainh'
-// console.log(user1.charCodeAt(0) - 1);
-
-
-// isPhoneNumber('0337430985');
-
-// isbirthDay('31/11/2021');
-
-// const d = new Date();
-// console.log(d.getFullYear());
