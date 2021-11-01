@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <title>Simple Live Code</title>
+
+</head>
+
+<body>
+
+    <header class="header">
+        <span>
+            <h2 class="header-title">Simple Live Code</h2>
+        </span>
+        <div class="header-options">
+            <button id="btnHTML" class="header-btn active" data-index="1" onclick="changeStatusButtons(this)">HTML</button>
+            <button id="btnCSS" class="header-btn active" data-index="2" onclick="changeStatusButtons(this)">CSS</button>
+            <button id="btnJS" class="header-btn active" data-index="3" onclick="changeStatusButtons(this)">JAVASCRIPT</button>
+            <button id="btnOP" class="header-btn active" data-index="4" onclick="changeStatusButtons(this)">OUTPUT</button>
+        </div>
+    </header>
+    <section class="container">
+
+        <div class="content__input" id="contentInput">
+            <div class="content__input--items item1">
+                <h3 class="content__input--title content--title">
+                    HTML
+                </h3>
+                <textarea name="input" id="codeHTML" cols="30" rows="10"><p id="title">Thay đổi nội dung</p>
+                </textarea>
+            </div>
+
+            <div class="content__input--items item2">
+                <h3 class="content__input--title content--title">
+                    CSS
+                </h3>
+                <textarea name="input" id="codeCSS" cols="30" rows="10"> p 
+ { color:#1e88e5; 
+  font-weight: bold;
+  font-size: x-large;}
+                </textarea>
+            </div>
+
+            <div class="content__input--items item3">
+                <h3 class="content__input--title content--title">
+                    JAVASCRIPT
+                </h3>
+                <textarea name="input" id="codeJs" cols="30" rows="10">document.getElementById("title").onclick = function () {this.innerHTML = "clicked";
+};
+                </textarea>
+
+            </div>
+            <div class="content__input--items item4">
+                <h3 class="content__input--title content--title">
+                    OUTPUT
+                </h3>
+                <iframe id="outputCode"></iframe>
+                </textarea>
+
+            </div>
+        </div>
+    </section>
+    <script src="./app.js"></script>
+</body>
+
+</html>
